@@ -17,7 +17,7 @@ const Claim = require('./models/claim');
 dotenv.config();
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 // =====================================
 // ENVIRONMENT VARIABLES
@@ -976,9 +976,7 @@ app.get('/api/health', (req, res) => {
 // =====================================
 // START SERVER
 // =====================================
-
 app.listen(PORT, () => {
-
-    console.log(`CampusFind server running at http://localhost:${PORT}`);
-
+    console.log(`CampusFind server running on port ${PORT}`);
 });
+
