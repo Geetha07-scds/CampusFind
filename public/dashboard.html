@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Dashboard - CampusFind</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">CampusFind</div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="lost.html">Lost Items</a></li>
+            <li><a href="found.html">Found Items</a></li>
+            <li><a href="report.html">Report Item</a></li>
+            <li><a href="dashboard.html">My Dashboard</a></li>
+            <li><button id="logoutBtn">Logout</button></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+
+        <h1>My Dashboard</h1>
+
+        <!-- User Details -->
+        <div id="userInfo">
+            <p>Loading user details...</p>
+        </div>
+
+        <!-- Reported Items -->
+        <h2>My Reported Items</h2>
+
+        <div id="itemContainer">
+            <p>Loading your items...</p>
+        </div>
+
+        <!-- My Claims -->
+        <h2>My Claims</h2>
+
+        <div id="claimsContainer">
+            <p>Loading your claims...</p>
+        </div>
+
+    </main>
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

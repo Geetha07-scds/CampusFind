@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Report Item - CampusFind</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">CampusFind</div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="lost.html">Lost Items</a></li>
+            <li><a href="found.html">Found Items</a></li>
+            <li><a href="report.html">Report Item</a></li>
+        </ul>
+    </nav>
+
+    <!-- Report Item Section -->
+    <section class="report-section">
+
+        <h1>Report a Lost or Found Item</h1>
+
+        <p>Provide the item details below to help reunite it with its owner.</p>
+
+        <form id="reportForm" enctype="multipart/form-data">
+
+            <!-- Item Type -->
+            <label for="type">Report Type:</label>
+
+            <select id="type" name="itemType" required>
+                <option value="">Select Report Type</option>
+                <option value="lost">Lost Item</option>
+                <option value="found">Found Item</option>
+            </select>
+
+
+            <!-- Item Name -->
+            <label for="itemName">Item Name:</label>
+
+            <input
+                type="text"
+                id="itemName"
+                name="itemName"
+                placeholder="Enter item name"
+                required
+            >
+
+
+            <!-- Category -->
+            <label for="category">Category:</label>
+
+            <select id="category" name="category" required>
+                <option value="">Select Category</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Books">Books</option>
+                <option value="Stationery">Stationery</option>
+                <option value="Personal Items">Personal Items</option>
+                <option value="Clothing">Clothing</option>
+                <option value="Other">Other</option>
+            </select>
+
+
+            <!-- Description -->
+            <label for="description">Description:</label>
+
+            <textarea
+                id="description"
+                name="description"
+                placeholder="Describe the item"
+                rows="4"
+                required
+            ></textarea>
+
+
+            <!-- Location -->
+            <label for="location">Location:</label>
+
+            <input
+                type="text"
+                id="location"
+                name="location"
+                placeholder="Where was it lost or found?"
+                required
+            >
+
+
+            <!-- Date -->
+            <label for="date">Date:</label>
+
+            <input
+                type="date"
+                id="date"
+                name="date"
+                required
+            >
+
+
+            <!-- Image Upload -->
+            <label for="image">Upload Item Image (Optional):</label>
+
+            <input
+                type="file"
+                id="image"
+                name="image"
+                accept="image/*"
+            >
+
+            <!-- Image Preview -->
+            <div class="image-preview-container">
+
+                <p>Image Preview:</p>
+
+                <img
+                    id="imagePreview"
+                    alt="Selected item image preview"
+                    style="
+                        display: none;
+                        width: 200px;
+                        height: auto;
+                        object-fit: contain;
+                        margin-top: 10px;
+                        border: 1px solid #ccc;
+                        border-radius: 8px; 
+                    "
+                >
+
+            </div>
+
+
+            <!-- Submit Button -->
+            <button type="submit" id="submitBtn">
+                Submit Report
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- JavaScript -->
+    <script src="js/report.js"></script>
+
+</body>
+
+</html>

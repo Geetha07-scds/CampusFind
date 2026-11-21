@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Search Items - CampusFind</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">CampusFind</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="lost.html">Lost Items</a></li>
+            <li><a href="found.html">Found Items</a></li>
+            <li><a href="search.html">Search Items</a></li>
+        </ul>
+
+        <a href="report.html" class="report-btn">Report Item</a>
+    </nav>
+
+    <section class="items-page">
+
+        <h1>Search Items</h1>
+
+        <p>Search for lost and found items on campus.</p>
+
+        <div class="search-container">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search by item name, category or location">
+
+            <button id="searchBtn">Search</button>
+
+        </div>
+
+        <div class="item-container"></div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 CampusFind | Campus Lost and Found Portal</p>
+    </footer>
+
+    <script src="search.js"></script>
+
+</body>
+
+</html>

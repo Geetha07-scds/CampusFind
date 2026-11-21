@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Lost and Found Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">CampusFind</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="lost.html">Lost Items</a></li>
+            <li><a href="found.html">Found Items</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="dashboard.html">My Dashboard</a></li>
+        </ul>
+
+        <a href="report.html" class="report-btn">Report Item</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <h1>
+            Find What You Lost.<br>
+            Return What You Found.
+        </h1>
+
+        <p>
+            A smart campus platform to help students
+            find their missing belongings.
+        </p>
+
+        <!-- Search Box -->
+        <div class="search-box">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search lost and found items..."
+            >
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <div id="searchResults" class="item-container"></div>
+
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+
+        <h2>Browse Categories</h2>
+
+        <div class="category-container">
+
+            <div class="category-card">
+                <h3>📱 Electronics</h3>
+                <p>Phones, laptops, chargers</p>
+            </div>
+
+            <div class="category-card">
+                <h3>🎒 Bags</h3>
+                <p>Backpacks and handbags</p>
+            </div>
+
+            <div class="category-card">
+                <h3>📚 Books</h3>
+                <p>Books and notebooks</p>
+            </div>
+
+            <div class="category-card">
+                <h3>🔑 Accessories</h3>
+                <p>Keys, watches and more</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Recently Lost Items -->
+    <section class="items-section" id="lost-items">
+
+        <h2>Recently Lost Items</h2>
+
+        <div class="item-container" id="homeLostItems">
+            <p>Loading lost items...</p>
+        </div>
+
+    </section>
+
+    <!-- Recently Found Items -->
+    <section class="items-section" id="found-items">
+
+        <h2>Recently Found Items</h2>
+
+        <div class="item-container" id="homeFoundItems">
+            <p>Loading found items...</p>
+        </div>
+
+    </section>
+
+    <!-- Item Details Modal -->
+    <div id="itemDetailsModal" class="details-modal" hidden>
+
+        <div class="details-modal-content">
+
+            <button
+                type="button"
+                id="closeDetailsModal"
+                class="close-details-btn"
+            >
+                &times;
+            </button>
+
+            <div id="itemDetailsContent"></div>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            © 2026 CampusFind | Campus Lost and Found Portal
+        </p>
+    </footer>
+
+    <!-- Existing Search JavaScript -->
+    <script src="js/search.js"></script>
+
+    <!-- Homepage JavaScript -->
+    <script src="js/home.js"></script>
+
+</body>
+</html>
